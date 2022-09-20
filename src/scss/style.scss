@@ -1,0 +1,135 @@
+// $bgColor: #24292e;
+// $text: #fff;
+$bgMenuIcon: #FF3E79;
+$activeLink: #7E7E82;
+$menuText: #1B1C21;
+
+@font-face {
+  font-family: 'Comic';
+  src: url('../fonts/comic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// .main-nav {
+  
+
+//   &__list {
+//     list-style-type: none;
+//     padding: 0;
+    
+    
+//   }
+
+
+//   &__item {
+    
+//   }
+
+
+//   &__link {
+//     text-decoration: none;
+//     color: $menuText;
+//     font-size: 16px;
+//     line-height: 24px;
+//     letter-spacing: -0.2px;
+//   }
+// }
+
+// .link-button {
+//   width: 40px;
+//   height: 40px;
+//   background-color: $bgMenuIcon;
+//   border-radius: 50%;
+//   cursor: pointer;
+  
+// }
+* {
+  box-sizing: border-box;
+}
+
+.main-nav {
+  width: 360px;
+  height: 676px;
+  border: 1px solid black;
+  padding: 16.78px 24px 32px 24px;
+    &__list {
+      list-style-type: none;
+      padding: 0;
+    }
+    &__item {
+      margin-bottom: 28px;
+    }
+
+    // .main-nav__link
+
+    &__link {
+      text-decoration: none;
+      color: $menuText;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      
+      &_active {
+        color: $activeLink
+      }       
+    }
+}
+.link-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    &__size {
+      &_m {
+        width: 152px;
+      }
+    }
+    &__flex {
+      &_column {
+        padding-top: 16px;
+        flex-direction: column;
+        align-items: start;
+        height: 145px;
+        }
+    }
+     
+  
+}
+.nav-link {
+  width: 40px;
+  height: 40px;
+  background-color: $bgMenuIcon;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+
+		&__link {
+		}
+}
+.logo {
+  margin-left: -90px;
+		&__link {
+		}
+}
+
+.main-nav-list-wrap{
+}
+
+.language {
+  text-transform: uppercase;
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: $menuText;
+  font-size: 16px;
+    &_big {
+      font-size: 24px;
+    }
+}
+
